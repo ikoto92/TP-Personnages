@@ -15,10 +15,8 @@ namespace TP_Personnages
                 {
                     // Simuler une attaque de personnage1 sur personnage2
                     personnage2.PointsDeVie -= personnage1.Force;
-
                     // Simuler une attaque de personnage2 sur personnage1
                     personnage1.PointsDeVie -= personnage2.Force;
-
                     // Vérifier si l'un des personnages est à court de points de vie
                     if (personnage1.PointsDeVie <= 0)
                     {
@@ -29,7 +27,6 @@ namespace TP_Personnages
                         return personnage1;
                     }
                 }
-
                 // Si aucun personnage n'est à court de points de vie après 5 rounds, on décide du gagnant en fonction des points de vie restants
                 return personnage1.PointsDeVie > personnage2.PointsDeVie ? personnage1 : personnage2;
             }
