@@ -27,7 +27,6 @@ namespace TP_Personnages
                         return personnage1;
                     }
                 }
-                // Si aucun personnage n'est à court de points de vie après 5 rounds, on décide du gagnant en fonction des points de vie restants
                 return personnage1.PointsDeVie > personnage2.PointsDeVie ? personnage1 : personnage2;
             }
         }      
