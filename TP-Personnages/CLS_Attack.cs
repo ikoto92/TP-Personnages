@@ -15,6 +15,7 @@ namespace TP_Personnages
                 {
                     // Simuler une attaque de personnage1 sur personnage2
                     personnage2.PointsDeVie -= personnage1.Force;
+                    
                     // Simuler une attaque de personnage2 sur personnage1
                     personnage1.PointsDeVie -= personnage2.Force;
                     // Vérifier si l'un des personnages est à court de points de vie
@@ -25,8 +26,10 @@ namespace TP_Personnages
                     else if (personnage2.PointsDeVie <= 0)
                     {
                         return personnage1;
+                        
                     }
                 }
+                
                 return personnage1.PointsDeVie > personnage2.PointsDeVie ? personnage1 : personnage2;
             }
         }      
